@@ -1,0 +1,30 @@
+{
+  "name": "rescript-nextjs-template",
+  "namespace": false,
+  "reason": { "react-jsx": 3 },
+  "refmt": 3,
+  "bs-dependencies": ["reason-react"],
+  "ppx-flags": [],
+  "sources": [
+    { "dir": "bindings", "subdirs": true },
+    { "dir": "common", "subdirs": true },
+    { "dir": "components", "subdirs": true },
+    { "dir": "modules", "subdirs": true },
+    { "dir": "pages", "subdirs": true },
+    "layouts"
+  ],
+  "package-specs": {
+    "module": "es6",
+    "in-source": true
+  },
+  "suffix": ".js",
+  "warnings": {
+    "error": "+101+8"
+  },
+  "bsc-flags": ["-bs-no-version-header", "-bs-super-errors", "-bs-g"],
+  "gentypeconfig": {
+    "language": "untyped",
+    "shims": [],
+    "module": "es6"
+  }
+}
